@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="cal_routine" type="cal_routine_node.py" name="cal_routine" cwd="node" output="screen">
+	<param name="file_name_calendar" type="string" value="/var/www/Tito/agenda/php_schedule/data_r.xml" />
+  </node> 
+
+
+</launch>

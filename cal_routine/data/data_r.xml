@@ -1,0 +1,44 @@
+<data>
+<event>
+<id>1442559373747</id>
+<text_name>Eventos museo1</text_name>
+<start_date>2015-09-01 15:00</start_date>
+<end_date>2015-12-31 00:00</end_date>
+<rec_type>day_1___#</rec_type>
+<rec_hour>0</rec_hour>
+<event_length>300</event_length>
+<event_pid></event_pid>
+<ev>null#Predefinido#INFORMACION_MUSEO</ev>
+</event>
+<event>
+<id>1442559373749</id>
+<text_name>Eventos museo</text_name>
+<start_date>2015-09-15 14:55</start_date>
+<end_date>2015-12-31 00:00</end_date>
+<rec_type>day_1___#</rec_type>
+<rec_hour>15</rec_hour>
+<event_length>900</event_length>
+<event_pid></event_pid>
+<ev>null#Predefinido#EVENTO_MUSEO</ev>
+</event>
+<event>
+<id>1442559373750</id>
+<text_name>Eventos museo</text_name>
+<start_date>2015-09-21 13:20</start_date>
+<end_date>2015-09-21 13:39</end_date>
+<rec_type></rec_type>
+<rec_hour>1</rec_hour>
+<event_length>1442580900</event_length>
+<event_pid>1442559373749</event_pid>
+<ev>null#Predefinido#EVENTO_MUSEO</ev>
+</event><event>
+<id>1442559373739</id>
+<text_name>TOur</text_name>
+<start_date>2015-09-14 13:31</start_date>
+<end_date>2015-12-31 00:00</end_date>
+<rec_type>week_1___0,2,3,4,5,6#</rec_type>
+<rec_hour>0</rec_hour>
+<event_length>600</event_length>
+<event_pid></event_pid>
+<ev>loc_0,100,200#Ruta#TOUR_COMPLETO</ev>
+</event></data>

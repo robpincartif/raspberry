@@ -1,0 +1,15 @@
+13:30|enviada alarma evento|INFORMACION_MUSEO|None
+13:31|enviada alarma evento|TOUR_COMPLETO|None
+13:32|enviada alarma evento|INFORMACION_MUSEO|None
+13:33|enviada alarma evento|INFORMACION_MUSEO|None
+13:34|enviada alarma evento|INFORMACION_MUSEO|None
+13:35|enviada alarma evento|INFORMACION_MUSEO|None
+13:36|enviada alarma evento|INFORMACION_MUSEO|None
+13:37|enviada alarma evento|INFORMACION_MUSEO|None
+13:38|enviada alarma evento|INFORMACION_MUSEO|None
+13:42|enviada alarma evento|INFORMACION_MUSEO|None
+13:44|enviada alarma evento|EVENTO_MUSEO|None
+13:47|enviada alarma evento|INFORMACION_MUSEO|None
+13:51|enviada alarma evento|INFORMACION_MUSEO|None
+13:51|enviada alarma evento|INFORMACION_MUSEO|None
+13:57|enviada alarma evento|INFORMACION_MUSEO|None

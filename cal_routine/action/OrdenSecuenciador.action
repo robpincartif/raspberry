@@ -1,0 +1,13 @@
+#goal definition
+string name
+string[] args
+int32 priority
+float32 tiempo_espera
+bool salto
+---
+#result definition
+int32 res
+---
+#feedback
+string state
+
