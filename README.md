@@ -24,3 +24,8 @@ Add commit
 ```
 
 
+  Install LCD TouchScreen
+
+```
+    $ http://uncle-muddy.me.uk/adafruit-pitft-2-8-on-ubuntu/
+```
