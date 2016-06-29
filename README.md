@@ -1,4 +1,4 @@
-## Git commands
+##Git commands
 
 Status
 
@@ -23,11 +23,9 @@ Add commit
     $ git push origin master
 ```
 
+##Install LCD TouchScreen
 
-  ## Install LCD TouchScreen
 
-
-     have found the driver for Kedei version 4.0!
 
 Get the LCD_show_v4
 
@@ -99,7 +97,7 @@ set_gpio_pins.sh
 
 ```
 
-## Install servoblaster
+##Install servoblaster
 
 ```
     $ git clone https://github.com/richardghirst/PiBits.git
