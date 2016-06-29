@@ -31,6 +31,8 @@ Get the LCD_show_v4
 
 ```
 sudo wget https://dl.dropboxusercontent.com/u/2183/LCD_show_v4.tar.gz
+
+http://en.kedei.net/raspberry/raspberry.html 
 ```
 
 Unpack it to the Raspberry pi
