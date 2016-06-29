@@ -24,13 +24,55 @@ Add commit
 ```
 
 
-  Install LCD TouchScreen
+  ## Install LCD TouchScreen
+
+
+     have found the driver for Kedei version 4.0!
+
+Get the LCD_show_v4
 
 ```
-    $ http://uncle-muddy.me.uk/adafruit-pitft-2-8-on-ubuntu/
+sudo wget https://dl.dropboxusercontent.com/u/2183/LCD_show_v4.tar.gz
 ```
 
-  Install WiringPi
+Unpack it to the Raspberry pi
+```
+tar xzvf LCD_show_v4.tar.gz
+```
+
+Remove the downloaded file. ( This step saves space)
+``` 
+sudo rm -r /home/pi/LCD_show_v4.tar.gz
+```
+Enable the LCD screen with driver.
+
+Go to the map where LCD_show_v4 is located
+```
+cd LCD_show_v4
+```
+
+Run the command to turn on the LCD screen.
+```
+./LCD35_v4
+```
+
+About a minute later the system says that it is going down for a reboot. The LCD screen is now on and you must see the boot up screen!
+
+Back to HDMI:
+
+Go to the map where LCD_show_v4 is located
+```
+cd LCD_show_v4
+```
+Run the command to activate the HDMI output.
+
+```
+./LCD_hdmi
+```
+About a minute later the system says that it is going down for a reboot. And... HDMI is back!
+
+
+##Install WiringPi
 
 ```
     $ git clone https://github.com/Gadgetoid/WiringPi2-Python.git
