@@ -80,7 +80,11 @@ About a minute later the system says that it is going down for a reboot. And... 
     $ sudo python setup.py install
 
 ```
-
+```
+    git clone git://git.drogon.net/wiringPi
+    cd wiringPi
+    ./build
+```
 Add in /etc/rc.local
 
 ```
