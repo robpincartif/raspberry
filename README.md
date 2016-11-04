@@ -156,22 +156,26 @@ curl -s https://www.dataplicity.com/rjjqbyfi.sh | sudo sh
 
 ```
 Raspberry Pi3
-VNC Server
+Remote Desktop X11VNC 
 
 ```
-sudo apt-get install tightvncserver
+sudo apt-get install x11vnc
 ```
-With you favorite text editor,create a text file "/etc/lightdm/lightdm.conf" with the following contents:
+Create a VNC password file.
 ```
-[VNCServer]
-enabled=true
-port=5900
-width=1360
-height=768
-depth=16
+sudo x11vnc -storepasswd yourVNCpasswordHERE /etc/x11vnc.pass
 ```
-The value of width and height describes the window resolution when connecting with a VNC client. Other width x height working resolutions are possible with: 800x600, 1024x768, 1152x854, 1280x768, 1280x800, 1280x960, 1280x1024, 1400x1050, 1440x900, 1600x1200, 1680x1050, 1792x1344, 1856x1392, 1920x1200, 1920x1220, 2560x1600.
+Create a job file in the editor nano (or gedit, leafpad etc.).
 ```
-sudo /etc/init.d/lightdm restart
+sudo nano /etc/init/x11vnc.conf
+```
+Paste this into the file:
+```
+start on login-session-start
 
+script
+
+/usr/bin/x11vnc -xkb -forever -auth /var/run/lightdm/root/:0 -display :0 -rfbauth /etc/x11vnc.pass -rfbport 5900 -bg -o /var/log/x11vnc.log
+
+end script
 ```
