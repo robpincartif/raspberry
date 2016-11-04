@@ -155,3 +155,23 @@ Dataplicity
 curl -s https://www.dataplicity.com/rjjqbyfi.sh | sudo sh
 
 ```
+Raspberry Pi3
+VNC Server
+
+```
+sudo apt-get install tightvncserver
+```
+With you favorite text editor,create a text file "/etc/lightdm/lightdm.conf" with the following contents:
+```
+[VNCServer]
+enabled=true
+port=5900
+width=1360
+height=768
+depth=16
+```
+The value of width and height describes the window resolution when connecting with a VNC client. Other width x height working resolutions are possible with: 800x600, 1024x768, 1152x854, 1280x768, 1280x800, 1280x960, 1280x1024, 1400x1050, 1440x900, 1600x1200, 1680x1050, 1792x1344, 1856x1392, 1920x1200, 1920x1220, 2560x1600.
+```
+sudo /etc/init.d/lightdm restart
+
+```
