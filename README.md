@@ -158,24 +158,37 @@ curl -s https://www.dataplicity.com/rjjqbyfi.sh | sudo sh
 Raspberry Pi3
 Remote Desktop X11VNC 
 
+
+```
+Run the following to install:
 ```
 sudo apt-get install x11vnc
-```
-Create a VNC password file.
-```
 sudo x11vnc -storepasswd yourVNCpasswordHERE /etc/x11vnc.pass
+sudo nano /lib/systemd/system/x11vnc.service
 ```
-Create a job file in the editor nano (or gedit, leafpad etc.).
+Insert this into the file:
 ```
-sudo nano /etc/init/x11vnc.conf
-```
-Paste this into the file:
-```
-start on login-session-start
+[Unit]
+Description="x11vnc"
+Requires=display-manager.service
+After=display-manager.service
 
-script
+[Service]
+ExecStart=/usr/bin/x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth guess -rfbauth /etc/x11vnc.pass
+ExecStop=/usr/bin/killall x11vnc
+Restart=on-failure
+Restart-sec=2
 
-/usr/bin/x11vnc -xkb -forever -auth /var/run/lightdm/root/:0 -display :0 -rfbauth /etc/x11vnc.pass -rfbport 5900 -bg -o /var/log/x11vnc.log
-
-end script
+[Install]
+WantedBy=multi-user.target
 ```
+Then, start with:
+```
+sudo systemctl daemon-reload
+sudo systemctl start x11vnc
+```
+And ensure the service starts on boot:
+```
+sudo systemctl enable x11vnc
+```
+
